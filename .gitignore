@@ -1,2 +1,6 @@
 /target
 /Cargo.lock
+
+# Rust related notes related to workflow
+# WIP: might commit when I've acheived a proper workflow
+TMP_NOTES.md

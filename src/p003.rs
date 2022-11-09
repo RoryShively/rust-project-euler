@@ -1,7 +1,9 @@
-/// The prime factors of 13195 are 5, 7, 13 and 29.
-///
-/// What is the largest prime factor of the number 600851475143 ?
-// **Efficient: Took 0.83s**
+/*
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+**Efficient: Took 0.83s**
+*/
 pub fn p003(n: u64) -> u64 {
     let mut factors: Vec<u64> = Vec::new();
     let max = (n as f64).sqrt().floor() + 1.0f64;
@@ -45,7 +47,7 @@ pub fn p003_is_prime(n: u64) -> bool {
 }
 
 /// **Brute force: Took 424.91s**
-pub fn p003__ineffectient(input: i64) -> i64 {
+pub fn p003_ineffectient(input: i64) -> i64 {
     // let input: i64 = 600851475143;
     // let input: i64 = 600851;
     let primes = p003_find_primes(input);
